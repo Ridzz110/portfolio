@@ -1,5 +1,6 @@
 {
   "name": "porfolio-website",
+  "homepage": "https://Ridzz110.github.io/portfolio-website",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,6 +12,7 @@
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "embla-carousel-react": "^8.1.7",
+    "gh-pages": "^6.1.1",
     "lucide-react": "^0.416.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
@@ -23,7 +25,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+   "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
